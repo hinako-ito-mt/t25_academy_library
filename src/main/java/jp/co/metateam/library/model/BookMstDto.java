@@ -13,7 +13,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class BookMstDto {
-    
     private Long id; 
     
     private String isbn;
