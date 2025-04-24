@@ -94,7 +94,7 @@ public class BookController {
      }
 // ISBN文字種チェック
      if (!isbn.matches("^[0-9]+$")) {
-       errorisbnlist.add("ISBNの形式が不明です");
+       errorisbnlist.add("ISBNは半角数字で入力してください");
     
 
     } 
