@@ -22,17 +22,17 @@
                         </div><br>
                         <div class="form_block">
                             <label for="title">書籍名<span style="color:red;">*</span></label><br>
-                            <input type="text" id="title" th:field="*{title}" placeholder="書籍名を入力"><br>
+                            <input type="text" id="title" style="width: 900px;" th:field="*{title}" placeholder="書籍名を入力"><br>
                             <div th:if="${errortitle !=null}" th:text="${errortitle}" class="error" style="color:red; font-size: 0.5em;">
                             </div>
                         </div>
                         <div class="form_block">
                             <label for="isbn">ISBN<span style="color:red;">*</span></label><br>
-                            <input type="text" id="isbn" th:field="*{isbn}" placeholder="ISBNを入力"><br>
+                            <input type="text" id="isbn" style="width: 900px;" th:field="*{isbn}" placeholder="ISBNを入力"><br>
                             <div th:if="${errorIsbn !=null}"th:text="${errorIsbn}" class="error" style="color:red; font-size: 0.5em;"></div>
                         <br></div>
                         <div class="mb30 flexarea">
-                            <button type="submit">保存</button>
+                            <button type="submit" id="submit_btn">保存</button>
                         </div>
                     </form>                
                 </div>
